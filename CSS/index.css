@@ -63,6 +63,18 @@
 }
 .menu--open {
   display: block;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: -350px;
+    width: 350px; 
+  }
+  to {
+    margin-left: 0;
+    width: 350px;
+  }
 }
 .articles {
   margin-top: 95px;
