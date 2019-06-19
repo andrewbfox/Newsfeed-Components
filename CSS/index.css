@@ -54,6 +54,18 @@
   border-bottom: none;
   z-index: 2;
   /* This set the layer level of the element, it has precendence over initial level of 1*/
+  animation-duration: 1s;
+  animation-name: slideout;
+}
+@keyframes slideout {
+  from {
+    margin-left: 0;
+    width: 350px; 
+  }
+  to {
+    margin-left: -350px;
+    width: 350px;
+  }
 }
 .menu ul li {
   list-style-type: none;
@@ -78,16 +90,7 @@
 }
 .articles {
   margin-top: 95px;
-  animation: pulse 5s infinite;
-}
-@keyframes pulse {             
-  0%, 100% {                   
-    background-color: blue;  
-  }                            
-  50% {                       
-    background-color: green;    
-  }                           
-}                             
+}                
 .article {
   margin: 20px 10%;
   padding: 0 20px 25px;
