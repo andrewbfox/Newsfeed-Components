@@ -1,6 +1,7 @@
 
 const toggleMenu = () => {
   // Toggle the "menu--open" class on your menu refence.
+  console.log('menu.classList: ', menu.classList);
   menu.classList.toggle("menu--open");
 }
 
@@ -13,4 +14,6 @@ menuButton.addEventListener("click", (event) => event.stopPropagation());
 menuButton.addEventListener("click", toggleMenu);
 
 // Trying to get menu to slide out when click occurs anywhere in the window:
-// window.addEventListener("click", toggleMenu);
+window.addEventListener("click", () => {
+  console.log(event.currentTarget);
+});
